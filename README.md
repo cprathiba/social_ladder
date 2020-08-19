@@ -24,5 +24,10 @@ Generate a new application key
 
     php artisan key:generate
     
-Compile    
+Compile
+
     npm install && npm run dev
+    
+DB Migration
+
+    php artisan migrate    
