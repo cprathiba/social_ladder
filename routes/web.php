@@ -30,3 +30,5 @@ Route::post('/admin/product/save', 'ProductController@save');
 Route::get('/admin/product/edit/{id}', 'ProductController@editView');
 
 Route::post('/admin/product/update/{id}', 'ProductController@update');
+
+Route::get('/admin/product/disable/{id}', 'ProductController@disable');

@@ -15,7 +15,7 @@
         <tr role="row">
             <th class="sorting" tabindex="0" aria-controls="example" style="width: 218px;">Product Name</th>
             <th class="sorting" tabindex="0" aria-controls="example" style="width: 218px;">Price</th>
-            <th class="sorting" tabindex="0" aria-controls="example" style="width: 218px;">Decimal</th>
+            <th class="sorting" tabindex="0" aria-controls="example" style="width: 218px;">Discount</th>
             <th class="sorting" tabindex="0" aria-controls="example" style="width: 100px;">Image</th>
             <th class="sorting" tabindex="0" aria-controls="example" style="width: 100px;">Description</th>
             <th class="sorting" tabindex="0" aria-controls="example" style="width: 100px;">Edit</th>
@@ -27,7 +27,7 @@
             <tr>
                 <td>{{$product->product_name}}</td>
                 <td>{{$product->price}}</td>
-                <td>{{$product->decimal}}</td>
+                <td>{{$product->discount}}</td>
                 <td>{{$product->image}}</td>
                 <td>{{$product->description}}</td>
                 <td><a href="{{url('admin/product/edit/'.$product->id)}}">Edit</a></td>

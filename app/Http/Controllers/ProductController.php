@@ -81,9 +81,23 @@ class ProductController extends Controller
 
         }
 
+    }
 
+    /**
+     * disable product
+     * @param $id
+     */
 
+    public function disable($id)
+    {
+        try {
+            $product = Product::findOrFail($id);
+            $product->update(['status' => 0]);
 
+            Session::flash('flash_message', 'Product successfully disabled!');
+        } catch (\Exception $exception) {
+            Session::flash('flash_error_message', 'Error Occurred');
+        }
     }
 
 }
