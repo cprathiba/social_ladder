@@ -1,4 +1,4 @@
-# Swivel-Group Practical Test
+# Social Ladder Practical Test
 
 ## Getting started
 
